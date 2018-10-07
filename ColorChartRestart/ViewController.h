@@ -18,10 +18,10 @@
 - (IBAction)actionMemorizetouched:(id)sender;
 - (IBAction)actionResettouched:(id)sender;
 - (IBAction)actionSwitchchanged:(id)sender;
-- (IBAction)actionSliderRchanged:(id)sender;
-- (IBAction)actionSliderVchanged:(id)sender;
-- (IBAction)actionSliderBchanged:(id)sender;
+- (IBAction)actionSliderchanged:(id)sender;
+- (IBAction)actionButtonPenultimateTouched:(id)sender;
 
+- (IBAction)actionButtonPreviousTouched:(id)sender;
 
 
 @end

@@ -33,6 +33,9 @@
                                         <rect key="frame" x="0.0" y="30" width="374" height="30"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="actionButtonPenultimateTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c1D-hM-Ggl"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previous" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8x-fp-nKp">
                                         <rect key="frame" x="0.0" y="60" width="374" height="30"/>
@@ -44,6 +47,9 @@
                                         <rect key="frame" x="0.0" y="90" width="374" height="30"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="actionButtonPreviousTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E3I-DQ-YtC"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGJ-yi-nnr">
                                         <rect key="frame" x="0.0" y="120" width="374" height="30"/>
@@ -74,10 +80,10 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cgh-kB-yVa">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cgh-kB-yVa">
                                         <rect key="frame" x="-2" y="30" width="378" height="31"/>
                                         <connections>
-                                            <action selector="actionSliderRchanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="uuA-kb-c1N"/>
+                                            <action selector="actionSliderchanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="TCx-80-evy"/>
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V: 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdT-zj-Jqg">
@@ -86,10 +92,10 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="VEE-Ik-nBw">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="VEE-Ik-nBw">
                                         <rect key="frame" x="-2" y="80.333333333333314" width="378" height="31"/>
                                         <connections>
-                                            <action selector="actionSliderVchanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="wJe-Oa-Beb"/>
+                                            <action selector="actionSliderchanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="MTm-9I-yex"/>
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B: 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7a-gD-tgQ">
@@ -98,10 +104,10 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3AY-v7-yia">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3AY-v7-yia">
                                         <rect key="frame" x="-2" y="130.66666666666663" width="378" height="31"/>
                                         <connections>
-                                            <action selector="actionSliderBchanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="m3M-ec-oZx"/>
+                                            <action selector="actionSliderchanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="q61-1z-UV0"/>
                                         </connections>
                                     </slider>
                                 </subviews>
