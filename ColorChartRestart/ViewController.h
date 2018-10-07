@@ -15,12 +15,16 @@
 @property (weak, nonatomic) IBOutlet UISlider *outletSliderR;
 @property (weak, nonatomic) IBOutlet UISlider *outletSliderV;
 @property (weak, nonatomic) IBOutlet UISlider *outletSliderB;
+@property (retain, nonatomic) IBOutlet UILabel *outletLabelR;
+@property (retain, nonatomic) IBOutlet UILabel *outletLabelV;
+@property (retain, nonatomic) IBOutlet UILabel *outletLabelB;
+@property (retain, nonatomic) IBOutlet UISwitch *outletSwitch;
+
 - (IBAction)actionMemorizetouched:(id)sender;
 - (IBAction)actionResettouched:(id)sender;
 - (IBAction)actionSwitchchanged:(id)sender;
 - (IBAction)actionSliderchanged:(id)sender;
 - (IBAction)actionButtonPenultimateTouched:(id)sender;
-
 - (IBAction)actionButtonPreviousTouched:(id)sender;
 
 

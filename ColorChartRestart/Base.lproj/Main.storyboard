@@ -74,7 +74,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KTw-GG-jxd" userLabel="Stack View slider">
                                 <rect key="frame" x="20" y="270.66666666666669" width="374" height="160.66666666666669"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dai-39-hab">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R: 0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dai-39-hab">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -86,7 +86,7 @@
                                             <action selector="actionSliderchanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="TCx-80-evy"/>
                                         </connections>
                                     </slider>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V: 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdT-zj-Jqg">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V: 0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdT-zj-Jqg">
                                         <rect key="frame" x="0.0" y="60.000000000000007" width="374" height="20.333333333333336"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -98,7 +98,7 @@
                                             <action selector="actionSliderchanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="MTm-9I-yex"/>
                                         </connections>
                                     </slider>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B: 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7a-gD-tgQ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B: 0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7a-gD-tgQ">
                                         <rect key="frame" x="0.0" y="110.33333333333331" width="374" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -140,7 +140,7 @@
                                             <action selector="actionSwitchchanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Rpz-eu-rwg"/>
                                         </connections>
                                     </switch>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ht2-5H-BGJ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="web" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ht2-5H-BGJ">
                                         <rect key="frame" x="49" y="0.0" width="325" height="31"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -171,11 +171,15 @@
                     </view>
                     <connections>
                         <outlet property="outletCurrent" destination="zMo-e3-b5g" id="HEb-my-vPL"/>
+                        <outlet property="outletLabelB" destination="m7a-gD-tgQ" id="2UL-do-VsA"/>
+                        <outlet property="outletLabelR" destination="Dai-39-hab" id="Sd9-5Q-dLq"/>
+                        <outlet property="outletLabelV" destination="SdT-zj-Jqg" id="WPn-K2-MEs"/>
                         <outlet property="outletPenultimate" destination="1P5-hm-CVW" id="8no-qP-tYi"/>
                         <outlet property="outletPrevious" destination="Nc7-eQ-HS2" id="JXA-pV-OWB"/>
                         <outlet property="outletSliderB" destination="3AY-v7-yia" id="tXZ-jG-aaN"/>
                         <outlet property="outletSliderR" destination="cgh-kB-yVa" id="Gh0-g0-Fa5"/>
                         <outlet property="outletSliderV" destination="VEE-Ik-nBw" id="UWf-U3-Vbp"/>
+                        <outlet property="outletSwitch" destination="Yh5-6Y-Yfk" id="Bmm-A9-hXA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
